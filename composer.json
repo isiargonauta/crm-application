@@ -63,5 +63,11 @@
                 "database_password": "SYMFONY__DATABASE_PASSWORD"
             }            
         }
+    },
+    "scripts": {
+        "warmup": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ]
     }
 }
